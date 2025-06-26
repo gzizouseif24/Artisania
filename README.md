@@ -6,17 +6,6 @@ Artisania is a full-stack e-commerce platform designed to connect customers dire
 
 ---
 
-## 🚀 Project Status
-
-Currently in the **MVP (Minimum Viable Product) development phase**. The initial focus is on building the core web application within a rapid 6-day development sprint, leveraging AI-assisted "vibe coding" techniques.
-
-**Initial Development Sprint Goal:** A functional web application demonstrating the core loop:
-1.  Artisans can register and list their products.
-2.  Customers can browse products, view artisan stories, and place orders (with "offline" payment arrangements for MVP).
-3.  Admins can manage basic platform operations.
-
----
-
 ## 🛠️ Technology Stack
 
 ### Backend
@@ -31,13 +20,9 @@ Currently in the **MVP (Minimum Viable Product) development phase**. The initial
 *   **API Communication:** Axios
 *   **Styling:** (To be decided - likely Tailwind CSS or a similar utility-first/component library for rapid development, aiming for a custom "Traditional Tunisian, simple, minimalistic" aesthetic)
 
-### AI-Assisted Development ("Vibe Coding")
-*   **Primary IDE & Tools:** Cursor AI, Claude, other generative AI tools.
-*   **Design & Branding Assistance:** Canva AI, Sora (for initial logo/branding elements), Google Stitch (for AI-generated wireframe inspiration).
-
 ---
 
-## ✨ MVP Features (6-Day Web App Sprint)
+## ✨ MVP Features 
 
 ### 1. User Roles & Authentication
 *   **Customer:**
@@ -92,17 +77,6 @@ Currently in the **MVP (Minimum Viable Product) development phase**. The initial
 *   Product Management (View all, Feature products)
 *   Order Management (View all)
 
-### Excluded from MVP (for 6-Day Sprint):
-*   Online Payment Gateway Integration
-*   Advanced Search & Filtering
-*   Customer Reviews & Ratings
-*   Wishlists
-*   Blog Section, Workshops & Events
-*   Newsletter Signup
-*   Mobile Application (planned for post-MVP)
-*   Augmented Reality (AR) features
-
----
 
 ## 🎨 Design Philosophy
 *   **Aesthetic:** Traditional Tunisian, simple, elegant, warm, and minimalistic.
@@ -132,21 +106,3 @@ Currently in the **MVP (Minimum Viable Product) development phase**. The initial
 2.  `npm install`
 3.  Ensure backend API URL is correctly configured (usually `http://localhost:8080`).
 4.  `npm run dev`.
-
-### Day 0 Goals
-*   Finalize Logo, Color Palette, Basic Wireframes.
-*   Setup Git repository with `development` branch.
-*   Successfully migrate backend to PostgreSQL and ensure it runs.
-*   Ensure frontend runs and can (attempt to) connect to the backend.
-*   Seed initial categories into the database.
-*   Setup DB Client (pgAdmin/DBeaver) and API Client (Postman/Insomnia).
-
----
-
-## 貢献 (Contributing - Placeholder)
-*(Details on how to contribute if this were an open project - can be removed for a private/solo project)*
-
----
-
-## 📜 License (Placeholder)
-*(Specify a license if applicable, e.g., MIT, or state "Proprietary")*

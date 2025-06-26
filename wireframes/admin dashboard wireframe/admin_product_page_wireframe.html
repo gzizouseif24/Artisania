@@ -1,0 +1,250 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#fbfaf9] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1efe9] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#191610]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#191610] text-lg font-bold leading-tight tracking-[-0.015em]">Crafts Admin</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#191610] text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-[#191610] text-sm font-medium leading-normal" href="#">Products</a>
+              <a class="text-[#191610] text-sm font-medium leading-normal" href="#">Orders</a>
+              <a class="text-[#191610] text-sm font-medium leading-normal" href="#">Customers</a>
+              <a class="text-[#191610] text-sm font-medium leading-normal" href="#">Analytics</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvPynh5Hp7-DlD96bvrQsBqfXIMvSqW4foHrL0-cx8RnaxWNYwPQF7o_eCLERTrtNqObryl_ail4P3gjvSkMiaKVhgZ1UzQpgttLfmSEZO0cAobF2Q7S2NItH32R3q3Ml0iTVmdgSp7ims2TYV5r-LXp7Pcxdgmu8JZU0vrhozDXPcu54-zZpjJtVO8f-tJZQKkTWLG-37zwaRXVwC804LClJsia0CqI1Dy4G5wotcvLkz77JC_aTUkigy9rkaeuecWPb3kEj7U3s");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#191610] tracking-light text-[32px] font-bold leading-tight">Product Management</p>
+                <p class="text-[#8e7d57] text-sm font-normal leading-normal">Manage all products from all artisans</p>
+              </div>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#e4ded3] bg-[#fbfaf9]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#fbfaf9]">
+                      <th class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 px-4 py-3 text-left text-[#191610] w-[400px] text-sm font-medium leading-normal">
+                        Product Name
+                      </th>
+                      <th class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 px-4 py-3 text-left text-[#191610] w-[400px] text-sm font-medium leading-normal">Artisan</th>
+                      <th class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 px-4 py-3 text-left text-[#191610] w-[400px] text-sm font-medium leading-normal">
+                        Category
+                      </th>
+                      <th class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 px-4 py-3 text-left text-[#191610] w-[400px] text-sm font-medium leading-normal">Price</th>
+                      <th class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 px-4 py-3 text-left text-[#191610] w-[400px] text-sm font-medium leading-normal">Stock</th>
+                      <th class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 px-4 py-3 text-left text-[#191610] text-sm font-medium leading-normal">Featured</th>
+                      <th class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 px-4 py-3 text-left text-[#191610] w-60 text-[#8e7d57] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Handwoven Berber Rug
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Fatima El Mansouri
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">Rugs</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$250</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">15</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">true</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Ceramic Tagine Pot
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Omar Ben Salem
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">Cookware</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$80</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">20</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Olive Wood Salad Bowl
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Leila Haddad
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Kitchenware
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$45</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">30</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">true</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Copper Tea Set
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Ahmed Ben Ali
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Tableware
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$120</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">10</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Traditional Tunisian Slippers
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Souad Ben Youssef
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">Footwear</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$60</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">25</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">true</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Mosaic Wall Art
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Karim El Amri
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">Decor</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$180</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">8</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Hand-Painted Silk Scarf
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Nadia Ben Amor
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Accessories
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$75</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">12</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">true</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Woven Basket Set
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Hassan El Kaddouri
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">Storage</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$50</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">18</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Pottery Vase
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Amira Ben Salah
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">Decor</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$35</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">22</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">true</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#e4ded3]">
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120 h-[72px] px-4 py-2 w-[400px] text-[#191610] text-sm font-normal leading-normal">
+                        Leather Pouf
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Youssef El Fassi
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">
+                        Furniture
+                      </td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">$100</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600 h-[72px] px-4 py-2 w-[400px] text-[#8e7d57] text-sm font-normal leading-normal">14</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840 h-[72px] px-4 py-2 w-60 text-[#8e7d57] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-120{display: none;}}
+                @container(max-width:240px){.table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-240{display: none;}}
+                @container(max-width:360px){.table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-360{display: none;}}
+                @container(max-width:480px){.table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-480{display: none;}}
+                @container(max-width:600px){.table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-600{display: none;}}
+                @container(max-width:720px){.table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-720{display: none;}}
+                @container(max-width:840px){.table-e17ccd7c-3d81-44d3-ab24-090fa77063a7-column-840{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

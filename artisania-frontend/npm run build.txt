@@ -1,0 +1,135 @@
+PS C:\Courses\Data Science\PFE-Aziz\artisania-frontend> npm run build
+
+> artisania-frontend@0.0.0 build
+> tsc -b && vite build
+
+src/App.tsx:38:10 - error TS6133: 'selectedCategory' is declared but its value is never read.
+
+38   const [selectedCategory, setSelectedCategory] = useState<string>('');
+            ~~~~~~~~~~~~~~~~
+
+src/App.tsx:48:29 - error TS6133: 'addToCart' is declared but its value is never read.
+
+48   const { state: cartState, addToCart, updateQuantity, removeFromCart, clearCart } = useCart();
+                               ~~~~~~~~~
+
+src/App.tsx:48:40 - error TS6133: 'updateQuantity' is declared but its value is never read.
+
+48   const { state: cartState, addToCart, updateQuantity, removeFromCart, clearCart } = useCart();
+                                          ~~~~~~~~~~~~~~
+
+src/App.tsx:48:56 - error TS6133: 'removeFromCart' is declared but its value is never read.
+
+48   const { state: cartState, addToCart, updateQuantity, removeFromCart, clearCart } = useCart();
+                                                          ~~~~~~~~~~~~~~
+
+src/components/common/ImageWithFallback.tsx:32:9 - error TS6133: 'isRealImage' is declared but its value is never read.
+
+32   const isRealImage = src && src !== 'USE_PLACEHOLDER';
+           ~~~~~~~~~~~
+
+src/components/pages/AddProduct.tsx:7:1 - error TS6133: 'ProductImage' is declared but its value is never read.
+
+7 import type { ProductImage } from '../../services/productImageService';
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/components/pages/ArtisanDashboard.tsx:24:3 - error TS6133: 'onCartClick' is declared but its value is never read.
+
+24   onCartClick,
+     ~~~~~~~~~~~
+
+src/components/pages/ArtisanDashboard.tsx:25:3 - error TS6133: 'cartItemCount' is declared but its value is never read.
+
+25   cartItemCount = 0,
+     ~~~~~~~~~~~~~
+
+src/components/pages/ArtisanDashboard.tsx:26:3 - error TS6133: 'cartTotal' is declared but its value is never read.
+
+26   cartTotal = 0
+     ~~~~~~~~~
+
+src/components/pages/ArtisanProfile.tsx:21:9 - error TS6133: 'user' is declared but its value is never read.
+
+21   const { user } = useAuth();
+           ~~~~~~~~
+
+src/components/pages/ArtistPage.tsx:13:60 - error TS6133: 'onBack' is declared but its value is never read.
+
+13 const ArtistPage: React.FC<ArtistPageProps> = ({ artistId, onBack, onProductClick }) => {
+                                                              ~~~~~~
+
+src/components/pages/ArtistPage.tsx:190:58 - error TS6133: 'index' is declared but its value is never read.
+
+190                 {products.map((product: FrontendProduct, index: number) => (
+                                                             ~~~~~
+
+src/components/pages/BrowseArtists.tsx:2:1 - error TS6133: 'useNavigate' is declared but its value is never read.
+
+2 import { useNavigate } from 'react-router-dom';
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/components/pages/BrowseArtists.tsx:15:10 - error TS6133: 'searchQuery' is declared but its value is never read.
+
+15   const [searchQuery, setSearchQuery] = useState('');
+            ~~~~~~~~~~~
+
+src/components/pages/CategoryPage.tsx:14:66 - error TS6133: 'onBack' is declared but its value is never read.
+
+14 const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, onBack, onProductClick }) => {
+                                                                    ~~~~~~
+
+src/components/pages/ProductDetails.tsx:29:22 - error TS6133: 'loadCart' is declared but its value is never read.
+
+29   const { addToCart, loadCart } = useCart();
+                        ~~~~~~~~
+
+src/contexts/CartContext.tsx:1:8 - error TS6133: 'React' is declared but its value is never read.
+
+1 import React, { createContext, useContext, useReducer, useEffect } from 'react';
+         ~~~~~
+
+src/contexts/CartContext.tsx:6:1 - error TS6133: 'authService' is declared but its value is never read.
+
+6 import { authService } from '../services/authService';
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/contexts/CartContext.tsx:75:17 - error TS6133: 'quantityDiff' is declared but its value is never read.
+
+75           const quantityDiff = newQuantity - oldQuantity;
+                   ~~~~~~~~~~~~
+
+src/services/orderService.ts:4:44 - error TS6196: 'BackendCartItem' is declared but never used.
+
+4 import type { BackendUser, BackendProduct, BackendCartItem } from '../types/api';
+                                             ~~~~~~~~~~~~~~~
+
+src/services/productService.ts:26:7 - error TS6133: 'ADMIN_PRODUCTS_ENDPOINT' is declared but its value is never read.
+
+26 const ADMIN_PRODUCTS_ENDPOINT = '/api/admin/products';
+         ~~~~~~~~~~~~~~~~~~~~~~~
+
+src/stores/AuthContext.tsx:104:59 - error TS2345: Argument of type '{ email: string; password: string; role: "CUSTOMER"; }' is not assignable to parameter of type 'RegisterRequest'.
+  Type '{ email: string; password: string; role: "CUSTOMER"; }' is missing the following properties from type 'RegisterRequest': firstName, lastName
+
+104       const response = await authService.registerCustomer({ email, password, role: 'CUSTOMER' });
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/stores/AuthContext.tsx:123:58 - error TS2345: Argument of type '{ email: string; password: string; role: "ARTISAN"; }' is not assignable to parameter of type 'RegisterRequest'.
+  Type '{ email: string; password: string; role: "ARTISAN"; }' is missing the following properties from type 'RegisterRequest': firstName, lastName
+
+123       const response = await authService.registerArtisan({ email, password, role: 'ARTISAN' });
+                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/utils/apiTransformers.ts:35:3 - error TS6133: 'context' is declared but its value is never read.
+
+35   context: TransformationContext = defaultTransformContext
+     ~~~~~~~
+
+src/utils/apiTransformers.ts:126:7 - error TS6133: 'transformProductImages' is declared but its value is never read.
+
+126 const transformProductImages = (
+          ~~~~~~~~~~~~~~~~~~~~~~
+
+src/utils/apiTransformers.ts:181:3 - error TS6133: 'context' is declared but its value is never read.
+
+181   context: TransformationContext = defaultTransformContext

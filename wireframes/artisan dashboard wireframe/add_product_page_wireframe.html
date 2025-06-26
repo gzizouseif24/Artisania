@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#fbfaf8] group/design-root overflow-x-hidden"
+      style='--select-button-svg: url(&apos;data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(149,127,80)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e&apos;); font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3efe8] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#1b170e]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#1b170e] text-lg font-bold leading-tight tracking-[-0.015em]">Crafts Marketplace</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#1b170e] text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-[#1b170e] text-sm font-medium leading-normal" href="#">Products</a>
+              <a class="text-[#1b170e] text-sm font-medium leading-normal" href="#">Orders</a>
+              <a class="text-[#1b170e] text-sm font-medium leading-normal" href="#">Analytics</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKArSm-Mv-WZF3ujUIi_kU-_7blyoyDi9mh5K30GS9TgDHMhxlUut2Y2ARTDvRRgFFc-_YZCN9cPLZNFdtYCL4BCH5hFDOD7QKg-dZ36Tv7ROm88sCMgRyU1XF34z_SQ3i4awIOZ-3ihxqV-Ik5EX8QaQ-2XO7VxTi4maBAeBdRt_0cP1R6WT2VuodCn-ATqLbmQ7AeyZKp7nk95zoAE8DvCQMk_uHdQUebQRgvGc3XDAKxhRbMHs585U0WGlMpC1fMOXLa5cvkD4");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#1b170e] tracking-light text-[32px] font-bold leading-tight">Add/Edit Product</p>
+                <p class="text-[#957f50] text-sm font-normal leading-normal">Manage your product listings</p>
+              </div>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1b170e] text-base font-medium leading-normal pb-2">Product Name</p>
+                <input
+                  placeholder="Enter product name"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b170e] focus:outline-0 focus:ring-0 border border-[#e6dfd1] bg-[#fbfaf8] focus:border-[#e6dfd1] h-14 placeholder:text-[#957f50] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1b170e] text-base font-medium leading-normal pb-2">Description</p>
+                <textarea
+                  placeholder="Enter product description"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b170e] focus:outline-0 focus:ring-0 border border-[#e6dfd1] bg-[#fbfaf8] focus:border-[#e6dfd1] min-h-36 placeholder:text-[#957f50] p-[15px] text-base font-normal leading-normal"
+                ></textarea>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1b170e] text-base font-medium leading-normal pb-2">Price</p>
+                <input
+                  placeholder="Enter product price"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b170e] focus:outline-0 focus:ring-0 border border-[#e6dfd1] bg-[#fbfaf8] focus:border-[#e6dfd1] h-14 placeholder:text-[#957f50] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1b170e] text-base font-medium leading-normal pb-2">Category</p>
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b170e] focus:outline-0 focus:ring-0 border border-[#e6dfd1] bg-[#fbfaf8] focus:border-[#e6dfd1] h-14 bg-[image:--select-button-svg] placeholder:text-[#957f50] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one">Select category</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1b170e] text-base font-medium leading-normal pb-2">Stock Quantity</p>
+                <input
+                  placeholder="Enter stock quantity"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b170e] focus:outline-0 focus:ring-0 border border-[#e6dfd1] bg-[#fbfaf8] focus:border-[#e6dfd1] h-14 placeholder:text-[#957f50] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex flex-col p-4">
+              <div class="flex flex-col items-center gap-6 rounded-xl border-2 border-dashed border-[#e6dfd1] px-6 py-14">
+                <div class="flex max-w-[480px] flex-col items-center gap-2">
+                  <p class="text-[#1b170e] text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Upload Product Image</p>
+                  <p class="text-[#1b170e] text-sm font-normal leading-normal max-w-[480px] text-center">Drag and drop or click to upload</p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#f3efe8] text-[#1b170e] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Upload Image</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex justify-stretch">
+              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-end">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#f3efe8] text-[#1b170e] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Cancel</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#e5b54c] text-[#1b170e] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Save</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

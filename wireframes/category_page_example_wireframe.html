@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#fbfaf9] group/design-root overflow-x-hidden"
+      style='--select-button-svg: url(&apos;data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(142,125,87)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e&apos;); font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <h3 class="text-[#191610] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Categories</h3>
+            <div class="flex items-center gap-4 bg-[#fbfaf9] px-4 min-h-14"><p class="text-[#191610] text-base font-normal leading-normal flex-1 truncate">Ceramics</p></div>
+            <div class="flex items-center gap-4 bg-[#fbfaf9] px-4 min-h-14"><p class="text-[#191610] text-base font-normal leading-normal flex-1 truncate">Textiles</p></div>
+            <div class="flex items-center gap-4 bg-[#fbfaf9] px-4 min-h-14"><p class="text-[#191610] text-base font-normal leading-normal flex-1 truncate">Jewelry</p></div>
+            <div class="flex items-center gap-4 bg-[#fbfaf9] px-4 min-h-14"><p class="text-[#191610] text-base font-normal leading-normal flex-1 truncate">Woodwork</p></div>
+            <div class="flex items-center gap-4 bg-[#fbfaf9] px-4 min-h-14"><p class="text-[#191610] text-base font-normal leading-normal flex-1 truncate">Leather Goods</p></div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap gap-2 p-4">
+              <a class="text-[#8e7d57] text-base font-medium leading-normal" href="#">Home</a>
+              <span class="text-[#8e7d57] text-base font-medium leading-normal">/</span>
+              <span class="text-[#191610] text-base font-medium leading-normal">Ceramics</span>
+            </div>
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#191610] tracking-light text-[32px] font-bold leading-tight min-w-72">Ceramics</p></div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#191610] focus:outline-0 focus:ring-0 border border-[#e4ded3] bg-[#fbfaf9] focus:border-[#e4ded3] h-14 bg-[image:--select-button-svg] placeholder:text-[#8e7d57] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one">Sort by</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhJoqwEJtu1kV37M4P2ySEzxApX1gV0PGGt9IsJYVWf3zqUjGK4OCDxySL1e47Gvvyb2kgSCBzR1fMb6T_RYbhb6oKBoiMNlvQBrSIGTnIUxAu0GbewyEQ-__3IXKHbMRhQy4gIpHNZ2j4_rdSPCMt1BksN8S1vDfO073wLNUVuVfq8nAaJDyZyVcuNzEpHiRT_dq4pPPAXpfrdr6LejZMDRjXKSCchRnUcnivbVeQK5AebMmJ_DmZAFtZp8lWx5zoj4-KiuM8O6s");'
+                ></div>
+                <div>
+                  <p class="text-[#191610] text-base font-medium leading-normal">Hand-Painted Ceramic Bowl</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">$35</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">by Aisha</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLrekJ8UFs1tbcn0522RoEWueGpgoCFZhrljBMGN5ivLe_fJG-8JDtmRqY6CCMVyBAyH_BqlLEC7KRw1cAGMReAsvlPx9zSp4J7m1g4iC_7CGNlHmASfi7-UFBKfXpd4uP0n1-QXvH-a0ghzjNb0fqm06yd1IJZSGJ3wcric9mjXWuBO0Mg6vGYZ0WccB87SsWuwmTsY-y8en7IjCCeJ0G0uq2w0p4jZ-ZE0pKsLdDIUr70MG3Smruz67qsA3-1g59uwfvvq6ZIEM");'
+                ></div>
+                <div>
+                  <p class="text-[#191610] text-base font-medium leading-normal">Traditional Tunisian Tile</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">$15</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">by Omar</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQIV_nOjgnoNUXVaK7KDaHpsgsVbgNMTW8hiI2JXQETfCU0qh9_e0DempfjPodvLLNkCHb7--onTD9572V98ySRmAfFFXXBGpMBfuDJR563Uibod85-y4MYcTEmNweyWMyIhzHQvd0A1904Q5ZGKxyUJUmQlikLR8V5ee8ZsSpJ8b51mmmbARehV2FEh15MOnD1zsZOf5kpAyexiBdKafNdsuvtinxXNOSFtaPnOQPvNErACWcYA_8ZZlFR_JsKmBkBVtV5rjblts");'
+                ></div>
+                <div>
+                  <p class="text-[#191610] text-base font-medium leading-normal">Ceramic Vase with Geometric Design</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">$45</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">by Samira</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPDo-ZMDz4LZ-V27BGFWbVyNVzFTSwe1qDdbKa-89v-Qhmwj9sSLEcdKXbv-y7j4jN96kxdGJSxgLt6E6uSmVx-mSltKaszGznkVWV0Kiel2N9P81__vWkKqwcloB-3UO06GoL8mWEShiAOLlMmtGtdSxn3_m7dzmX9VLhc5iL_Ba66xNs0pyb0nj72BNPuHVyeVDpBAMOiMIxTrxLshcU18_-IWTPBmCmemKHYqqwZB3AfPxopfh6b9rsVmasDHk8x-kiXNtl5d0");'
+                ></div>
+                <div>
+                  <p class="text-[#191610] text-base font-medium leading-normal">Set of Ceramic Coasters</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">$20</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">by Khalil</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBr2XAppCAuv1X39QF6qBEaC-XW2dcs1nk2n5SNMKnXdAIVH5f-bXN0h11BsmwM7EAjbx_R2QzabH9fgMpwf9LP3tfLoyfbTJ0-31FZ1Mt4EjLBjpexMLtOSB2sFbrSq1nv9DeHKT7TlzNLolZg4joUr8SVuSzqYH107Hb60bSUw7xK6ZYAraTuvRX8dT0BrDCXxuUvjU7p9ZQqUkZf-FlB5Gm1z_aeMspBcWx7X49Q3V0ms5lSZz3i3LaN520gpgnoYHZ0y0pysUs");'
+                ></div>
+                <div>
+                  <p class="text-[#191610] text-base font-medium leading-normal">Decorative Ceramic Plate</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">$50</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">by Amina</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDy_Gnpg_TDfgQR31Gj8BIwY6OkcmknKf0cN1ZvkWSo5p_82R_8kuiKllkUKRv7knLYwZkWAPhGLrLr1NlPmeeae6CpDZe_FNCYo_jSULPmRP7GeqLWpg9aM4Xa0xLapNQTOddFwh175aNfY-UVphZ97WCLM9Vq8R5pqd2Yn1Hu9IeyroKAjx-GNjSLkAL__ZnrtCaBd9t19HX6YGbZmUYo4y_3uahMvSyFKZ9GUbvZqTxbnSvVfeNJhR_MsvkxdVnNvSlN7QsZmas");'
+                ></div>
+                <div>
+                  <p class="text-[#191610] text-base font-medium leading-normal">Handmade Ceramic Mug</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">$25</p>
+                  <p class="text-[#8e7d57] text-sm font-normal leading-normal">by Hedi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+/* Artisan Dashboard Styles - Matching the wireframe exactly */
+
+.artisan-dashboard-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fbfaf9;
+}
+
+.dashboard-main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 1.25rem 10rem; /* px-40 py-5 */
+  font-family: var(--font-inter);
+}
+
+.dashboard-layout-container {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.dashboard-content-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.dashboard-content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px; /* Increased from 960px for wider forms */
+  flex: 1;
+}
+
+/* Welcome Header */
+.dashboard-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem; /* gap-3 */
+  padding: 1rem; /* p-4 */
+}
+
+.dashboard-welcome-title {
+  color: #191610; /* text-[#191610] */
+  letter-spacing: -0.025em; /* tracking-light */
+  font-size: 2rem; /* text-[32px] */
+  font-weight: 700; /* font-bold */
+  line-height: 1.25; /* leading-tight */
+  min-width: 18rem; /* min-w-72 */
+  margin: 0;
+  font-family: var(--font-inter);
+}
+
+/* Navigation Tabs Section */
+.dashboard-tabs-section {
+  padding-bottom: 0.75rem; /* pb-3 */
+}
+
+.dashboard-tabs-container {
+  display: flex;
+  justify-content: flex-start; /* Align tabs to the left */
+  border-bottom: 1px solid #e4ded3; /* border-b border-[#e4ded3] */
+  padding-left: 1rem;
+  padding-right: 1rem; /* px-4 */
+  gap: 2rem; /* gap-8 */
+}
+
+/* Individual Tab Button */
+.dashboard-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid transparent; /* border-b-[3px] border-b-transparent */
+  padding-bottom: 13px; /* pb-[13px] */
+  padding-top: 1rem; /* pt-4 */
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dashboard-tab:hover {
+  opacity: 0.8;
+}
+
+/* Active Tab */
+.dashboard-tab-active {
+  border-bottom-color: #e5cd98; /* border-b-[#e5cd98] */
+  color: #191610; /* text-[#191610] */
+}
+
+/* Inactive Tab */
+.dashboard-tab-inactive {
+  border-bottom-color: transparent; /* border-b-transparent */
+  color: #8e7d57; /* text-[#8e7d57] */
+}
+
+/* Tab Text */
+.dashboard-tab-text {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 700; /* font-bold */
+  line-height: normal; /* leading-normal */
+  letter-spacing: 0.015em; /* tracking-[0.015em] */
+  margin: 0;
+  font-family: var(--font-inter);
+}
+
+.dashboard-tab-active .dashboard-tab-text {
+  color: #191610; /* text-[#191610] */
+}
+
+.dashboard-tab-inactive .dashboard-tab-text {
+  color: #8e7d57; /* text-[#8e7d57] */
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  padding: 2rem 1rem;
+}
+
+.dashboard-section-title {
+  color: #191610;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* Stats Grid (for Products tab) */
+.dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-stat-card {
+  background: white;
+  border: 1px solid #e4ded3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #191610;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat-label {
+  color: #8e7d57;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Placeholder Content */
+.dashboard-placeholder {
+  background: white;
+  border: 2px dashed #e4ded3;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #8e7d57;
+}
+
+.dashboard-placeholder.coming-soon {
+  opacity: 0.6;
+}
+
+.dashboard-placeholder p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-main {
+    padding-left: 2rem; /* Reduce from px-40 */
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .dashboard-tabs-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .dashboard-welcome-title {
+    font-size: 1.5rem;
+    min-width: auto;
+  }
+  
+  .dashboard-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard-tabs-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .dashboard-content {
+    padding: 1rem 0.5rem;
+  }
+} 

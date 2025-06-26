@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Poppins:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700"
+    />
+    
+    <!-- Inter Font from Assets -->
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        src: url('../artisania-frontend/src/assets/fonts/Inter-text/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Inter';
+        src: url('../artisania-frontend/src/assets/fonts/Inter-text/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: italic;
+      }
+    </style>
+
+    <title>Artisania - Tunisian Marketplace</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'artisan-orange': '#B8681A',
+              'artisan-cream': '#F5F1E8',
+              'artisan-dark': '#2D2419'
+            },
+            fontFamily: {
+              'inter': ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#fdfcfa] group/design-root overflow-x-hidden" style='font-family: "Inter", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="bg-white border-b border-gray-200 shadow-sm">
+          <!-- Top Row -->
+          <div class="border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 py-3 grid grid-cols-3 items-center">
+              <!-- Left spacer -->
+              <div></div>
+              
+              <!-- Centered Artisania Logo -->
+              <div class="flex justify-center">
+                <img src="../artisania-frontend/src/assets/logo and brand/Artisania Logo.png" alt="Artisania" class="h-20 w-auto" />
+              </div>
+              
+              <!-- Right-aligned User Actions -->
+              <div class="flex items-center justify-end gap-6 text-artisan-dark font-inter">
+                <a href="#" class="text-xs uppercase font-medium hover:text-artisan-orange transition-colors">
+                  Login / Register
+                </a>
+                <button class="hover:text-artisan-orange transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                  </svg>
+                </button>
+                <button class="relative hover:text-artisan-orange transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.69,146.26,196.16,128,206.8Z"></path>
+                  </svg>
+                  <span class="absolute -top-2 -right-2 bg-artisan-orange text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                </button>
+                <div class="flex items-center gap-2 hover:text-artisan-orange transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"></path>
+                  </svg>
+                  <span class="text-xs font-medium">0 / 0 DT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Bottom Row -->
+          <div class="border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 py-3">
+              <nav class="flex items-center justify-center">
+                <div class="flex items-center justify-center flex-wrap gap-x-6 gap-y-2">
+                  <a href="#" class="text-sm font-medium text-artisan-dark hover:text-artisan-orange transition-colors font-inter">Pottery & Ceramics</a>
+                  <a href="#" class="text-sm font-medium text-artisan-dark hover:text-artisan-orange transition-colors font-inter">Textiles & Fabrics</a>
+                  <a href="#" class="text-sm font-medium text-artisan-dark hover:text-artisan-orange transition-colors font-inter">Leather Goods</a>
+                  <a href="#" class="text-sm font-medium text-artisan-dark hover:text-artisan-orange transition-colors font-inter">Jewelry & Accessories</a>
+                  <a href="#" class="text-sm font-medium text-artisan-dark hover:text-artisan-orange transition-colors font-inter">Wood Crafts</a>
+                  <a href="#" class="text-sm font-medium text-artisan-dark hover:text-artisan-orange transition-colors font-inter">Home Decor</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDE_kAV0U1NihI7hi2oZBQUddk-igOHQ-LDcnjhiHIfcCHw_bqr-XN3JsTEaW0SLfMXsrNwEptUMwjEyQ8vMmxg3TEC80cRSeqTUAODnaOCIqLRujPa7JlF43CZSQC61ltYui3uxaMd5yDqIxcg8RX1Tx1w5tQCsWADyZ2xGt9v-y4_D9XuznVbG4q60QQOGLaMGAHqPSGdLri9rhQqHl2-whs_91I7e5tbyWzbGDit6ibyDQzzX0Hdnvixt0-LaSy7FUbJjGkllA8");'
+                ></div>
+                <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-[#2d2419] text-4xl font-bold leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-bold @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                      style='font-family: "Poppins", sans-serif;'
+                    >
+                      Discover the Soul of Tunisia
+                    </h1>
+                    <h2 class="text-[#6b5e47] text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Connect with talented Tunisian artisans and explore their unique crafts, each telling a story of tradition and artistry.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#d4831c] text-white text-sm font-semibold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-semibold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#b8681a] transition-colors"
+                    style='font-family: "Poppins", sans-serif;'
+                  >
+                    <span class="truncate">Explore Crafts</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#2d2419] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5" style='font-family: "Poppins", sans-serif;'>Our Story</h2>
+            <p class="text-[#2d2419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Artisania was born from a passion for preserving Tunisia's rich artistic heritage. We connect talented artisans with a global audience, showcasing their unique crafts
+              and stories. Our mission is to empower these creators, celebrate their traditions, and bring the beauty of Tunisian artistry to the world.
+            </p>
+            <div class="flex w-full grow bg-[#fdfcfa] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#fdfcfa] @[480px]:gap-2 aspect-[3/2] rounded-xl grid grid-cols-[2fr_1fr_1fr]">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChPgAqdfVl3UlEVdACsigJEg8rpp8Gj7rdTb3Yv5w5XsCTUGT9le68qh5SEMyRD6nSTefYX20xmEDP9JTV-RbOXRmTabzzNiLv39xyAcDwAez2MtPWsqfXZP40gP3pLnUEojE4-dvZ12XO9FiMwUZbiDJFxNZZQd3IxPsEmosNbybT5rdBo_5NMMF0hML2XvFuhh31Q5gr9lJJHFP0Pd7lqKneCn7yhIllMNUv3VmW_s8df6w_tT8ssjqv9pmh13QYHoGz7ejFQak");'
+                ></div>
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none col-span-2 row-span-2"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJS4-qAiTQ1mMx2KDQxhJ092uETJcm4KjKPb-Rz23HxOOjjF9eKBif1DFFV6MbVnI28c-Jkn-ghu044RhG8Jcy_6kxQ-ncLbWfdmZ2KyZJm9wdIwK-Yc5Y302ZD1TJ51rROLUva9vE_1e4oXltUMKzDeQWcE9qrqC-G9J0q1RHw7Ktk6pWniVvcaNLjJhdBbNJFTOtG13RincTYhEWvmqQ3MgpKzQf0gY6708Cc_DySxzVzcwBa1_64V7P4YgzAbLKih-E6DplG_4");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-[#2d2419] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5" style='font-family: "Poppins", sans-serif;'>Featured Crafts</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsjKuBspjHMzPC26FXekwbDnLMAN2oRJ3I4tL_RkHPi8EYaXoJjQNydvmBtekEewwaaLH85J9IdSxy8gY3Inaxo96Rzk7Q4sfcxrFh6KK0hmph1hYsZzACRK-u5AK394ZmH2b67PVbOpI0Gv1COiePe-tl-B1KTJFgKLaqZwKLJIgIuiXZ7xFMGQlW8SUtU1I_-OCdob4Ahkx9RkLbRP4ga_rDNWMIiEVFJGItOUFLhM010ELo67gNqeFK7Vxlzat8b2EYflRNsgE");'
+                ></div>
+                <div>
+                  <p class="text-[#2d2419] text-base font-medium leading-normal" style='font-family: "Poppins", sans-serif;'>Hand-Painted Ceramic Bowl</p>
+                  <p class="text-[#d4831c] text-sm font-semibold leading-normal">$35</p>
+                  <p class="text-[#9a8468] text-sm font-normal leading-normal">by Fatima</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDU6L2t_5JT7DahfqqT36BXJsA3NQ2G_CloDRK3iO7brE3tEOuIqm9ED51O2sx6gLahggMZ4GEjF_R4-KnYZFMvGr6xJ158Wr5NcdlXiMR0_bMMlJPn8e6ttNc62VOSLXlsz209Lxncs90OKZ0a4lxBoYE3dpoYWLPDbJ_1cTWN3Ldr_JTRayxEtCWI0cwUyOdrqN-WfLccy8SznJsu3piLiDo9rv7PZcGSEdXgHwTGqzivN8JhPGyuQ2aS-9e08bVUwI2pwRAthn8");'
+                ></div>
+                <div>
+                  <p class="text-[#2d2419] text-base font-medium leading-normal" style='font-family: "Poppins", sans-serif;'>Olive Wood Carving</p>
+                  <p class="text-[#d4831c] text-sm font-semibold leading-normal">$50</p>
+                  <p class="text-[#9a8468] text-sm font-normal leading-normal">by Omar</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCoaaKj5E4l4xqNGZ3As0750xBv1mMJTD9ChbO44TyjQ6YMvnayOCOdJwhkh56TjeMwX4IHuJxlDW185nJF1jE7J_JZ6uaO3EmuoKcFXZBXp5zWzzuHa07OcrjtMzTNIFFh54txwf-CGyQx3U4D-MZQapUPr2nAFgcQalrh-Sl2RUAKdTJB1V8ojAGgf634EEo_SVxtz2gGbTquyCbkl8_AKJ20IDP8Gs_fjLgndMQUJIlSnwA6eqZcSMdIEGkkftYnBMaHJP4XKM");'
+                ></div>
+                <div>
+                  <p class="text-[#2d2419] text-base font-medium leading-normal" style='font-family: "Poppins", sans-serif;'>Woven Basket</p>
+                  <p class="text-[#d4831c] text-sm font-semibold leading-normal">$25</p>
+                  <p class="text-[#9a8468] text-sm font-normal leading-normal">by Aisha</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmnpsKnSHLfmSpgq-EjMmbKV4OZ1c_XvCdA7NASqXa7RmoJ8eaCE28_k5OMdedhYpbapGPovyhtMfsRnTdSkwPpFkaTkZDeIx7KJ9cyDFdXcqfJimkn8lyMOQ2yEHOXBcUPtSBtvtxfIjxeVjhWokE8h-JWCUbKfyLkzsy-M2LfnepNUU71LDZPhctgrCVtQV9JXY9SIiIkLA5JtLFNVudIjhJehHd3vQQYeOHkwgF6fRoh0hJXglcko8gh5Qvzx43Gi3H4kRpUig");'
+                ></div>
+                <div>
+                  <p class="text-[#2d2419] text-base font-medium leading-normal" style='font-family: "Poppins", sans-serif;'>Mosaic Tile Coaster</p>
+                  <p class="text-[#d4831c] text-sm font-semibold leading-normal">$15</p>
+                  <p class="text-[#9a8468] text-sm font-normal leading-normal">by Karim</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#9a8468] text-base font-normal leading-normal min-w-40 hover:text-[#d4831c] transition-colors" href="#">About Artisania</a>
+                <a class="text-[#9a8468] text-base font-normal leading-normal min-w-40 hover:text-[#d4831c] transition-colors" href="#">Our Mission</a>
+                <a class="text-[#9a8468] text-base font-normal leading-normal min-w-40 hover:text-[#d4831c] transition-colors" href="#">Artisan Stories</a>
+                <a class="text-[#9a8468] text-base font-normal leading-normal min-w-40 hover:text-[#d4831c] transition-colors" href="#">Customer Service</a>
+                <a class="text-[#9a8468] text-base font-normal leading-normal min-w-40 hover:text-[#d4831c] transition-colors" href="#">Shipping &amp; Returns</a>
+                <a class="text-[#9a8468] text-base font-normal leading-normal min-w-40 hover:text-[#d4831c] transition-colors" href="#">Contact Us</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#9a8468] hover:text-[#d4831c] transition-colors" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#9a8468] hover:text-[#d4831c] transition-colors" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#9a8468] text-base font-normal leading-normal">© 2024 Artisania. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

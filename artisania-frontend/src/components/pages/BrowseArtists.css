@@ -1,0 +1,207 @@
+/* BrowseArtists.css */
+
+.browse-artists {
+  background-color: #fbfaf9;
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+}
+
+.browse-artists-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 160px;
+  flex: 1;
+}
+
+.browse-artists-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  width: 100%;
+}
+
+/* Search Section */
+.search-section {
+  padding: 12px 16px;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f1efe9;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  background-color: #f1efe9;
+  color: #8e7d57;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background-color: #f1efe9;
+  color: #191610;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 16px 0 8px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #8e7d57;
+}
+
+.search-input:focus {
+  outline: none;
+  ring: 0;
+}
+
+/* Section Title */
+.section-title {
+  color: #191610;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  padding: 16px 16px 8px 16px;
+  margin: 0;
+}
+
+/* Artists Grid */
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+
+/* No Artists Message */
+.no-artists-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.no-artists-message p {
+  color: #8e7d57;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 400px;
+}
+
+/* Artist Card */
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+
+.artist-card.clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.artist-card.clickable:hover {
+  transform: translateY(-2px);
+}
+
+.artist-card.clickable:hover .artist-image {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.artist-image {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.artist-name {
+  color: #191610;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.artist-specialty {
+  color: #8e7d57;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Responsive Design */
+@container (max-width: 768px) {
+  .browse-artists-container {
+    padding: 20px 20px;
+  }
+  
+  .artists-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+  }
+
+  .no-artists-message p {
+    font-size: 14px;
+  }
+}
+
+@container (max-width: 480px) {
+  .browse-artists-container {
+    padding: 20px 16px;
+  }
+  
+  .artists-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .artist-name {
+    font-size: 14px;
+  }
+  
+  .artist-specialty {
+    font-size: 12px;
+  }
+
+  .no-artists-message {
+    padding: 30px 16px;
+  }
+
+  .no-artists-message p {
+    font-size: 14px;
+  }
+} 

@@ -1,0 +1,80 @@
+/* Footer Component Styles */
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 960px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  container-type: inline-size;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@container (min-width: 480px) {
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.footer-link {
+  color: #9a8468;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 10rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #d4831c;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-social-link {
+  color: #9a8468;
+  transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+  color: #d4831c;
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.footer-copyright {
+  color: #9a8468;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+} 

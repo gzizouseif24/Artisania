@@ -1,0 +1,67 @@
+/* ImageGrid Component Styles */
+.image-grid-container {
+  padding: 0 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-grid-content {
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  flex-grow: 1;
+  background-color: #fdfcfa;
+  container-type: inline-size;
+  padding: 1rem;
+}
+
+.image-grid {
+  width: 100%;
+  gap: 0.25rem;
+  overflow: hidden;
+  background-color: #fdfcfa;
+  aspect-ratio: 3/2;
+  border-radius: 0.75rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+@container (min-width: 480px) {
+  .image-grid {
+    gap: 0.5rem;
+  }
+}
+
+.image-grid-left {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: auto;
+  border-radius: 0;
+  grid-row: span 2;
+}
+
+.image-grid-right {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: auto;
+  border-radius: 0;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-grid-container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid-container {
+    padding: 0 16px;
+  }
+} 
